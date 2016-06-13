@@ -62,7 +62,7 @@ else:
             (rpi_revision != 'Beta') and
             (int('0x'+rpi_revision, 16) >= 0xa02082)):
         # RPi 3 and above
-        DEFAULT_SERIAL_PORT = '/dev/ttyS0'
+        DEFAULT_SERIAL_PORT = '/dev/ttyACM0'
     else:
         # RPi 2 and below
         DEFAULT_SERIAL_PORT = '/dev/ttyACM0'
